@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kesiswaan | SMK Negeri 1 Kusan Hulu</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* HALAMAN KESISWAAN */
+
+        .kesiswaan-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .kesiswaan-title {
+            text-align: center;
+            color: var(--heading-color);
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .kesiswaan-subtitle {
+            text-align: center;
+            color: var(--paragraph-color);
+            margin-bottom: 35px;
+            line-height: 1.7;
+        }
+
+        /* INTRO */
+
+        .kesiswaan-intro {
+            background: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 40px;
+        }
+
+        .kesiswaan-intro h3 {
+            color: var(--heading-color);
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .kesiswaan-intro p {
+            color: var(--paragraph-color);
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* JUDUL BAGIAN */
+
+        .kesiswaan-heading {
+            color: var(--heading-color);
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .kesiswaan-description {
+            color: var(--paragraph-color);
+            text-align: center;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        /* KARTU EKSTRAKURIKULER */
+
+        .ekskul-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 45px;
+        }
+
+        .ekskul-card {
+            background: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-left: 5px solid #28746F;
+            border-radius: 10px;
+            padding: 22px;
+            transition: transform 0.2s ease,
+                        box-shadow 0.2s ease;
+        }
+
+        .ekskul-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+        }
+
+        .ekskul-card h3 {
+            color: var(--heading-color);
+            font-size: 19px;
+            margin-bottom: 15px;
+        }
+
+        .ekskul-card p {
+            color: var(--paragraph-color);
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .ekskul-card strong {
+            color: var(--heading-color);
+        }
+
+        /* BAGIAN PENGEMBANGAN */
+
+        .pengembangan-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .pengembangan-card {
+            background: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 22px;
+            text-align: center;
+        }
+
+        .pengembangan-card span {
+            font-size: 35px;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .pengembangan-card h3 {
+            color: var(--heading-color);
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .pengembangan-card p {
+            color: var(--paragraph-color);
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 700px) {
+            .ekskul-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pengembangan-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .kesiswaan-title {
+                font-size: 25px;
+            }
+        }
+
+        
+/* BAGIAN OSIS */
+
+.osis-section {
+    margin: 45px 0;
+}
+
+.osis-title {
+    color: var(--heading-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.osis-description {
+    color: var(--paragraph-color);
+    text-align: center;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.osis-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.osis-card {
+    width: 250px;
+    padding: 25px 20px;
+    background: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-left: 5px solid #28746F;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.osis-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.12);
+}
+
+.osis-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.osis-card h3 {
+    color: var(--heading-color);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.osis-card p {
+    color: var(--paragraph-color);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="header-logo">
+            <img src="image/Logo sekolah.jpg"
+                 alt="Logo SMK Negeri 1 Kusan Hulu">
+
+            <div>
+                <h1>SMK Negeri 1 Kusan Hulu</h1>
+                <p>Website Informasi Sekolah</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="akademik.html">Akademik</a>
+    <a href="kesiswaan.html">Kesiswaan</a>
+    <a href="berita.html">Berita</a>
+    <a href="kontak.html">Kontak</a>
+</nav>
+
+    </header>
+
+    <!-- KONTEN UTAMA -->
+
+    <main class="kesiswaan-container">
+
+        <h2 class="kesiswaan-title">Kesiswaan</h2>
+
+        <p class="kesiswaan-subtitle">
+            Informasi kegiatan dan pengembangan potensi
+            peserta didik SMK Negeri 1 Kusan Hulu.
+        </p>
+
+        <!-- PENGENALAN -->
+
+        <section class="kesiswaan-intro">
+
+            <h3>Kegiatan Kesiswaan</h3>
+
+            <p>
+                Kegiatan kesiswaan merupakan bagian penting
+                dalam mendukung pengembangan potensi, minat,
+                bakat, dan karakter peserta didik. Melalui
+                berbagai kegiatan ekstrakurikuler, siswa dapat
+                mengembangkan keterampilan, kedisiplinan,
+                kreativitas, serta kemampuan bekerja sama.
+            </p>
+
+        </section>
+
+        <!-- EKSTRAKURIKULER -->
+
+        <section>
+
+            <h2 class="kesiswaan-heading">
+                Ekstrakurikuler
+            </h2>
+
+            <p class="kesiswaan-description">
+                Berikut adalah daftar kegiatan ekstrakurikuler
+                beserta jadwal dan pembinanya.
+            </p>
+
+            <div class="ekskul-grid">
+
+                <div class="ekskul-card">
+                    <h3>01. Sepak Bola</h3>
+                    <p><strong>Hari:</strong> Senin</p>
+                    <p><strong>Pembina:</strong> Husnul Awalin, A.Md.</p>
+                </div>
+
+                <div class="ekskul-card">
+                    <h3>02. Seni Tari</h3>
+                    <p><strong>Hari:</strong> Selasa</p>
+                    <p><strong>Pembina:</strong> Deni Prastio, S.Pd.</p>
+                </div>
+
+                <div class="ekskul-card">
+                    <h3>03. Kelas Gitar</h3>
+                    <p><strong>Hari:</strong> Selasa</p>
+                    <p><strong>Pembina:</strong> Rudijansen Lekairua, S.Pd.</p>
+                </div>
+
+                <div class="ekskul-card">
+                    <h3>04. Kelas Musik</h3>
+                    <p><strong>Hari:</strong> Selasa</p>
+                    <p><strong>Pembina:</strong> Budi Setiawan, S.Pd.</p>
+                </div>
+
+                <div class="ekskul-card">
+                    <h3>05. Bola Voli</h3>
+                    <p><strong>Hari:</strong> Rabu</p>
+                    <p><strong>Pembina:</strong> Muhammad Sauqillah, S.T.</p>
+                </div>
+
+                <div class="ekskul-card">
+                    <h3>06. PBB</h3>
+                    <p><strong>Hari:</strong> Kamis</p>
+                    <p><strong>Pembina:</strong> Adi Susanto, S.Pd.</p>
+                </div>
+
+                <div class="ekskul-card">
+                    <h3>07. Palang Merah Remaja (PMR)</h3>
+                    <p><strong>Hari:</strong> Selasa</p>
+                    <p><strong>Pembina:</strong> Belum diperbarui</p>
+                </div>
+
+                <div class="ekskul-card">
+                    <h3>08. Pramuka</h3>
+                    <p><strong>Hari:</strong> Jumat</p>
+                    <p><strong>Pembina:</strong> Budi Setiawan, S.Pd.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PENGEMBANGAN MINAT DAN BAKAT -->
+
+        <section>
+
+            <h2 class="kesiswaan-heading">
+                Pengembangan Minat dan Bakat
+            </h2>
+
+            <p class="kesiswaan-description">
+                Kegiatan ekstrakurikuler menjadi wadah bagi siswa
+                untuk mengembangkan kemampuan di berbagai bidang.
+            </p>
+
+            <div class="pengembangan-grid">
+
+                <div class="pengembangan-card">
+                    <span>⚽</span>
+                    <h3>Olahraga</h3>
+                    <p>
+                        Mengembangkan kemampuan fisik,
+                        sportivitas, dan kerja sama.
+                    </p>
+                </div>
+
+                <div class="pengembangan-card">
+                    <span>🎵</span>
+                    <h3>Seni dan Kreativitas</h3>
+                    <p>
+                        Mengembangkan kreativitas,
+                        ekspresi, dan bakat seni.
+                    </p>
+                </div>
+
+                <div class="pengembangan-card">
+                    <span>🤝</span>
+                    <h3>Kedisiplinan</h3>
+                    <p>
+                        Melatih tanggung jawab,
+                        kepemimpinan, dan kedisiplinan.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+<!-- ORGANISASI SISWA INTRA SEKOLAH -->
+
+<section class="osis-section">
+
+    <h2 class="osis-title">
+        Organisasi Siswa Intra Sekolah (OSIS)
+    </h2>
+
+    <p class="osis-description">
+        OSIS merupakan organisasi siswa yang menjadi wadah
+        bagi peserta didik untuk mengembangkan kemampuan
+        kepemimpinan, tanggung jawab, kerja sama, dan
+        kreativitas di lingkungan sekolah.
+    </p>
+
+    <h2 class="osis-title">
+        Kepengurusan OSIS
+    </h2>
+
+    <div class="osis-grid">
+
+        <!-- KETUA OSIS -->
+
+        <div class="osis-card">
+
+            <div class="osis-icon">👤</div>
+
+            <h3>Sarep Hidayatullah</h3>
+
+            <p>Ketua OSIS</p>
+
+        </div>
+
+        <!-- WAKIL KETUA OSIS -->
+
+        <div class="osis-card">
+
+            <div class="osis-icon">👤</div>
+
+            <h3>Belum Diketahui</h3>
+
+            <p>Wakil Ketua OSIS</p>
+
+        </div>
+
+    </div>
+
+    <p class="osis-description" style="margin-top: 20px;">
+        Periode kepengurusan: Ga Tau.
+    </p>
+
+</section>
+
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>
+            &copy; 2026 TECH DAILY - Four Teams</p>
+            <p>SMK Negeri 1 Kusan Hulu</p>
+
+
+    </footer>
+
+    <script src="js/theme.js"></script>
+
+</body>
+</html>
