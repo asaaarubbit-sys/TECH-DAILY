@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Sekolah - TECH DAILY</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* HALAMAN KONTAK */
+        .contact-intro {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 30px;
+            line-height: 1.7;
+            color: var(--paragraph-color);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .contact-card {
+            background-color: var(--soft-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 22px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            background-color: #28746f;
+            color: white;
+            border-radius: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+        }
+
+        .contact-info h4 {
+            font-family: Georgia, serif;
+            color: var(--heading-color);
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .contact-info p {
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-info a {
+            color: var(--heading-color);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: #28746f;
+            text-decoration: underline;
+        }
+
+        /* GOOGLE MAPS */
+        .maps-box {
+            background-color: var(--soft-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .maps-box p {
+            color: var(--paragraph-color);
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .maps-button {
+            display: inline-block;
+            background-color: #28746f;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .maps-button:hover {
+            background-color: #173747;
+            transform: translateY(-2px);
+        }
+
+        /* MEDIA SOSIAL */
+        .social-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .social-item {
+            background-color: var(--soft-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px 12px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: 0.3s;
+        }
+
+        .social-item:hover {
+            transform: translateY(-4px);
+            border-color: #28746f;
+        }
+
+        .social-item span {
+            display: block;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .social-item h4 {
+            color: var(--heading-color);
+            font-family: Georgia, serif;
+            margin-bottom: 5px;
+        }
+
+        .social-item p {
+            font-size: 13px;
+            overflow-wrap: anywhere;
+        }
+
+        /* FORMULIR PESAN */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 7px;
+            background-color: var(--card-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .form-group textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: 2px solid #28746f;
+            border-color: #28746f;
+        }
+
+        .send-button {
+            background-color: #28746f;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            padding: 13px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .send-button:hover {
+            background-color: #173747;
+        }
+
+        .form-note {
+            color: var(--paragraph-color);
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .social-list {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-card {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-logo">
+            <img src="image/Logo sekolah.jpg"
+                 alt="Logo SMK Negeri 1 Kusan Hulu">
+
+            <div>
+                <h1>SMK Negeri 1 Kusan Hulu</h1>
+                <p>Website Informasi Sekolah</p>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="akademik.html">Akademik</a>
+            <a href="kesiswaan.html">Kesiswaan</a>
+            <a href="berita.html">Berita</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-section">
+
+            <h2>Hubungi Kami</h2>
+
+            <p class="contact-intro">
+                Selamat datang di halaman kontak SMK Negeri 1 Kusan Hulu.
+                Temukan informasi alamat, nomor telepon, email,
+                lokasi, dan media sosial sekolah melalui halaman ini.
+            </p>
+
+            <!-- 01. INFORMASI KONTAK -->
+            <div class="menu-item">
+
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+                    <h3>Informasi Kontak</h3>
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-info">
+                            <h4>Alamat Sekolah</h4>
+                            <p>
+                                Jl. Valgosons No. KM. 12,
+                                RT. 01 / RW. 01, Desa Wonorejo,
+                                Kecamatan Kusan Hulu,
+                                Kabupaten Tanah Bumbu,
+                                Kalimantan Selatan 72272.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">☎</div>
+                        <div class="contact-info">
+                            <h4>Nomor Telepon</h4>
+                            <p>
+                                <a href="tel:08125176997">
+                                    08125176997
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">✉</div>
+                        <div class="contact-info">
+                            <h4>Email Sekolah</h4>
+                            <p>
+                                <a href="mailto:smknegerikusanhulu@gmail.com">
+                                    smknegerikusanhulu@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 02. LOKASI SEKOLAH -->
+            <div class="menu-item">
+
+                <div class="section-heading">
+                    <span class="section-number">02</span>
+                    <h3>Lokasi Sekolah</h3>
+                </div>
+
+                <div class="maps-box">
+                    <p>
+                        Untuk mengetahui lokasi SMK Negeri 1 Kusan Hulu
+                        secara lebih lengkap, silakan kunjungi lokasi
+                        sekolah melalui Google Maps.
+                    </p>
+
+                    <a
+                        href="https://maps.app.goo.gl/GqkcywYF7wX6Fxew6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="maps-button">
+                        📍 Lihat Lokasi di Google Maps
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- 03. MEDIA SOSIAL -->
+            <div class="menu-item">
+
+                <div class="section-heading">
+                    <span class="section-number">03</span>
+                    <h3>Media Sosial Sekolah</h3>
+                </div>
+
+                <p class="identity-description">
+                    Ikuti media sosial SMK Negeri 1 Kusan Hulu
+                    untuk mendapatkan informasi dan dokumentasi
+                    berbagai kegiatan sekolah.
+                </p>
+
+                <div class="social-list">
+
+                    <a
+                        href="https://www.instagram.com/smkn1kusanhulu/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-item">
+                        <span>📷</span>
+                        <h4>Instagram</h4>
+                        <p>@smkn1kusanhulu</p>
+                    </a>
+
+                    <a
+                        href="https://www.youtube.com/channel/UCIG55MTxfV8Hbd9l33LXA5g/videos"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-item">
+                        <span>▶</span>
+                        <h4>YouTube</h4>
+                        <p>SMK Negeri 1 Kusan Hulu</p>
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/smkn1khu/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-item">
+                        <span>f</span>
+                        <h4>Facebook</h4>
+                        <p>SMKN 1 Kusan Hulu</p>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- 04. FORMULIR PESAN -->
+            <div class="menu-item">
+
+                <div class="section-heading">
+                    <span class="section-number">04</span>
+                    <h3>Kirim Pesan</h3>
+                </div>
+
+                <p class="identity-description">
+                    Silakan isi formulir berikut untuk menyampaikan
+                    pertanyaan atau pesan kepada pihak sekolah.
+                </p>
+
+                <form class="contact-form" id="contactForm">
+
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Masukkan nama lengkap"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Alamat Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Masukkan alamat email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea
+                            id="pesan"
+                            name="pesan"
+                            placeholder="Tuliskan pesan atau pertanyaan..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="send-button">
+                        Kirim Pesan
+                    </button>
+
+                    <p class="form-note">
+                        Setelah menekan tombol kirim, aplikasi email
+                        pada perangkat akan dibuka untuk mengirim pesan.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TECH DAILY - Four Teams</p>
+        <p>SMK Negeri 1 Kusan Hulu</p>
+    </footer>
+
+    <script>
+
+        
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const nama = document.getElementById("nama").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const pesan = document.getElementById("pesan").value.trim();
+
+           const tujuan = "asaaarubbit@gmail.com";
+
+            const subjek = encodeURIComponent("Pesan dari Pengunjung Website");
+            const isi = encodeURIComponent(
+                "Nama: " + nama +
+                "\nEmail: " + email +
+                "\n\nPesan:\n" + pesan
+            );
+
+            window.location.href =
+                "mailto:" + tujuan +
+                "?subject=" + subjek +
+                "&body=" + isi;
+        });
+    </script>
+
+    <script src="js/theme.js"></script>
+
+</body>
+</html>
