@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita Sekolah - TECH DAILY</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        
+
+        .berita-intro {
+            text-align: center;
+            color: var(--paragraph-color);
+            line-height: 1.5;
+            margin: -10px auto 35px;
+            max-width: 750px;
+        }
+
+            .berita-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+            align-items: start;
+        }
+
+            .berita-card {
+            background-color: var(--card-color);
+            border: 2px solid var(--border-color);
+            border-left: 6px solid #28746f;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            min-height: 510px;
+        }
+
+        
+        .berita-image {
+            width: 100%;
+            height: 230px;
+            background-color: var(--soft-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--paragraph-color);
+            font-size: 15px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .berita-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        
+        .berita-content {
+            padding: 23px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .berita-date {
+            color: #28746f;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .berita-content h3 {
+            font-family: Georgia, "Times New Roman", serif;
+            color: var(--heading-color);
+            font-size: 21px;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+
+        .berita-content > p {
+            color: var(--paragraph-color);
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        
+        .berita-detail {
+    margin-top: 5px;
+    padding-top: 5px;
+    }
+
+        .berita-detail summary {
+            color: #28746f;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 8px 0;
+        }
+
+        .berita-detail summary:hover {
+            color: #173747;
+        }
+
+        .berita-detail p {
+            color: var(--paragraph-color);
+            line-height: 1.5;
+            margin-top: 14px;
+            font-size: 14px;
+        }
+
+        
+        @media (max-width: 700px) {
+            .berita-grid {
+                grid-template-columns: 1fr;
+
+            .berita-content {
+                 min-height: 0;
+            }
+                
+            }
+
+            .berita-image {
+                height: 210px;
+            }
+
+            .berita-content {
+        padding: 23px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+        <div class="header-logo">
+            <img src="image/Logo sekolah.jpg"
+                 alt="Logo SMK Negeri 1 Kusan Hulu">
+
+            <div>
+                <h1>SMK Negeri 1 Kusan Hulu</h1>
+                <p>Website Informasi Sekolah</p>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="akademik.html">Akademik</a>
+            <a href="kesiswaan.html">Kesiswaan</a>
+            <a href="berita.html" class="active">Berita</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+
+    
+    <main>
+        <section class="menu-section">
+
+            <h2>Berita Sekolah</h2>
+
+            <p class="berita-intro">
+                Informasi, dokumentasi, dan berbagai kegiatan
+                yang berlangsung di SMK Negeri 1 Kusan Hulu.
+            </p>
+
+            <div class="berita-grid">
+
+                
+                <article class="berita-card">
+
+                    <div class="berita-image">
+                        Dokumentasi Kegiatan Hari Pahlawan
+                    </div>
+
+                    <div class="berita-content">
+
+                        <div class="berita-date">
+                            10–11 November 2026
+                        </div>
+
+                        <h3>
+                            Semarak Peringatan Hari Pahlawan 2026
+                            di SMK Negeri 1 Kusan Hulu
+                        </h3>
+
+                        <p>
+                            Rangkaian kegiatan peringatan Hari Pahlawan
+                            diisi dengan upacara, perlombaan, dan pembagian
+                            hadiah bagi para pemenang.
+                        </p>
+
+                        <details class="berita-detail">
+                            <summary>Baca selengkapnya</summary>
+
+                            <p>
+                                Dalam rangka memperingati Hari Pahlawan 2026,
+                                SMK Negeri 1 Kusan Hulu mengadakan kegiatan
+                                yang melibatkan peserta didik.
+                            </p>
+
+                            <p>
+                                Kegiatan diawali dengan upacara peringatan Hari Pahlawan 
+                                pada Selasa, 10 November 2026. Saat upacara berlangsung, 
+                                peserta didik mengenakan pakaian adat atau pakaian daerah,
+                                serta batik selain batik nasional untuk memeriahkan 
+                                peringatan Hari Pahlawan.
+                            </p>
+
+                            <p>
+                                Keesokan harinya, Rabu, 11 November 2026, kegiatan 
+                                dilanjutkan dengan berbagai perlombaan, seperti lomba 
+                                baca puisi bertema kepahlawanan. Melalui lomba ini, peserta
+                                diajak untuk menghayati perjuangan dan mengenang jasa 
+                                para pahlawan.
+                            </p>
+
+                            <p>
+                                Ada juga lomba estafet yang dilakukan secara berkelompok. 
+                                Dalam lomba ini,peserta harus menyelesaikan beberapa
+                                tantangan secara berurutan, mulai dari mendirikan botol, 
+                                menebak tokoh pahlawan,hingga menyusun puzzle.
+                            </p>
+
+                            <p>
+                                Setelah semua perlombaan selesai, kegiatan dilanjutkan 
+                                dengan pembagian hadiah kepada para pemenang pada sore hari.
+                            </p>
+
+                        </details>
+
+                    </div>
+                </article>
+
+
+              
+                <article class="berita-card">
+
+                    <div class="berita-image">
+                        Dokumentasi Kegiatan Ketarunaan
+                    </div>
+
+                    <div class="berita-content">
+
+                        <div class="berita-date">
+                            24–27 November 2025
+                        </div>
+
+                        <h3>
+                            Program Ketarunaan SMK Negeri 1 Kusan Hulu
+                        </h3>
+
+                        <p>
+                            Program pembinaan karakter peserta didik
+                            dengan pendekatan semi-militer yang melibatkan
+                            personel Batalyon B Pelopor Satbrimob
+                            Polda Kalimantan Selatan.
+                        </p>
+
+                        <details class="berita-detail">
+                            <summary>Baca selengkapnya</summary>
+
+                            <p>
+                                SMK Negeri 1 Kusan Hulu melaksanakan Program Ketarunaan 
+                                pada 24–27 November2025 sebagai salah satu upaya membentuk
+                                karakter peserta didik. Kegiatan ini menggunakan pendekatan 
+                                semi-militer dengan melibatkan personel dari Batalyon B Pelopor 
+                                Satbrimob Polda Kalimantan Selatan.
+                            </p>
+
+                            <p>
+                                Selama kegiatan berlangsung, peserta didik mendapatkan 
+                                pembinaan melalui dua materi utama, yaitu Peraturan
+                                Baris-Berbaris (PBB) dan Wawasan Kebangsaan (Wasbang). 
+                                Materi tersebut menjadi bagian dari upaya menanamkan
+                                kedisiplinan, tanggung jawab, serta semangat cinta 
+                                tanah air kepada peserta didik.
+                            </p>
+
+                            <p>
+                                Program ini diikuti oleh peserta didik kelas X dan XI. 
+                                Melalui kegiatan Ketarunaan, sekolah berharap peserta
+                                didik dapat mengembangkan karakter yang kuat, memiliki 
+                                kedisiplinan, serta mampu menerapkan nilai-nilai
+                                positif dalam kehidupan sehari-hari maupun di lingkungan
+                                masyarakat.
+                            </p>
+
+                        </details>
+
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 TECH DAILY - Four Teams</p>
+        <p>SMK Negeri 1 Kusan Hulu</p>
+    </footer>
+
+    <script src="js/theme.js"></script>
+
+</body>
+</html>
