@@ -18,23 +18,22 @@
         }
 
         /* JUDUL HALAMAN */
-      .atp-title {
-    color: var(--heading-color, #173747);
-    text-align: center;
-    margin-bottom: 30px;
-    line-height: 1.5;
-}
+        .atp-title {
+            color: var(--heading-color, #173747);
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
 
-        /* PENGENALAN ATP */
+        /* PENGENALAN TKR */
         .atp-intro {
             display: grid;
             grid-template-columns: 1fr 1.2fr;
             gap: 30px;
             align-items: center;
-
-         background: var(--card-color);
-padding: 25px;
-border: 1px solid var(--border-color);
+            background: var(--card-color);
+            padding: 25px;
+            border: 1px solid var(--border-color);
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.07);
         }
@@ -46,28 +45,27 @@ border: 1px solid var(--border-color);
             border-radius: 10px;
         }
 
-       .atp-info h3 {
-    color: var(--heading-color);
-    margin-bottom: 15px;
-    font-size: 22px;
-}
+        .atp-info h3 {
+            color: var(--heading-color);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
 
-       .atp-info h3 {
-    color: var(--heading-color);
-    margin-bottom: 15px;
-    font-size: 22px;
-}
+        .atp-info p {
+            color: var(--paragraph-color);
+            line-height: 1.7;
+        }
 
         /* KOMPETENSI */
         .atp-kompetensi {
             margin-top: 45px;
         }
 
-       .atp-kompetensi h2,
-.atp-gallery h2 {
-    color: var(--heading-color, #173747);
-    margin-bottom: 22px;
-}
+        .atp-kompetensi h2,
+        .atp-gallery h2 {
+            color: var(--heading-color, #173747);
+            margin-bottom: 22px;
+        }
 
         .kompetensi-grid {
             display: grid;
@@ -75,34 +73,111 @@ border: 1px solid var(--border-color);
             gap: 20px;
         }
 
-      .kompetensi-card {
-    background: var(--card-color);
-    padding: 22px;
-    border: 1px solid var(--border-color);
-    border-left: 5px solid #28746f;
-    border-radius: 10px;
-
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
-}
+        .kompetensi-card {
+            background: var(--card-color);
+            padding: 22px;
+            border: 1px solid var(--border-color);
+            border-left: 5px solid #28746f;
+            border-radius: 10px;
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
 
         .kompetensi-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.09);
         }
 
-       .kompetensi-card h3 {
-    color: var(--heading-color);
-    margin-bottom: 10px;
-    font-size: 19px;
-}
+        .kompetensi-card h3 {
+            color: var(--heading-color);
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
 
         .kompetensi-card p {
-    color: var(--paragraph-color);
-    line-height: 1.7;
-    }
+            color: var(--paragraph-color);
+            line-height: 1.7;
+        }
 
-        /* GALERI DOKUMENTASI */
+        /* TENAGA PENDIDIK JURUSAN */
+        .tenaga-jurusan {
+            margin: 45px 0;
+        }
+
+        .tenaga-jurusan h2 {
+            color: var(--heading-color);
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .tenaga-deskripsi {
+            color: var(--paragraph-color);
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .tenaga-kaprog {
+            max-width: 350px;
+            margin: 0 auto 30px;
+        }
+
+        .tenaga-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .tenaga-card {
+            background: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s ease,
+                        box-shadow 0.2s ease;
+        }
+
+        .tenaga-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 5px 14px rgba(0,0,0,0.12);
+        }
+
+        .tenaga-foto {
+            width: 130px;
+            height: 150px;
+            margin: 0 auto 15px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            background: var(--soft-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: var(--paragraph-color);
+        }
+
+        .tenaga-foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .tenaga-card h3 {
+            color: var(--heading-color);
+            font-size: 17px;
+            margin-bottom: 7px;
+        }
+
+        .tenaga-card p {
+            color: var(--paragraph-color);
+            font-size: 14px;
+        }
+
+        /* FASILITAS PROGRAM KEAHLIAN */
         .atp-gallery {
             margin-top: 45px;
         }
@@ -113,45 +188,37 @@ border: 1px solid var(--border-color);
             gap: 20px;
         }
 
-        .gallery-placeholder {
-            min-height: 180px;
-            background: var(--soft-bg);
-            border: 2px dashed var(--border-color);
-            border-radius: 10px;
+        .fasilitas-card {
+            background: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        .fasilitas-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.09);
+        }
+
+        .fasilitas-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .fasilitas-card h3 {
+            color: var(--heading-color);
+            font-size: 16px;
+            padding: 15px;
             text-align: center;
-            padding: 20px;
-            gap: 10px;
         }
-
-        .gallery-placeholder span {
-            font-size: 30px;
-        }
-
-        .gallery-placeholder h3 {
-    color: var(--heading-color);
-    font-size: 16px;
-}
-
-.gallery-placeholder p {
-    color: var(--paragraph-color);
-    font-size: 13px;
-}
-
-.gallery-note {
-    margin-top: 15px;
-    color: var(--paragraph-color);
-    font-size: 14px;
-    line-height: 1.7;
-}
 
         /* RESPONSIVE */
         @media (max-width: 700px) {
-
             .atp-section {
                 width: 90%;
             }
@@ -173,93 +240,11 @@ border: 1px solid var(--border-color);
             }
         }
 
-
-/* TENAGA PENDIDIK JURUSAN */
-
-.tenaga-jurusan {
-    margin: 45px 0;
-}
-
-.tenaga-jurusan h2 {
-    color: var(--heading-color);
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 12px;
-}
-
-.tenaga-deskripsi {
-    color: var(--paragraph-color);
-    text-align: center;
-    margin-bottom: 25px;
-    line-height: 1.7;
-}
-
-.tenaga-kaprog {
-    max-width: 350px;
-    margin: 0 auto 30px;
-}
-
-.tenaga-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 750px;
-    margin: auto;
-}
-
-.tenaga-card {
-    background: var(--card-color);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.2s ease,
-                box-shadow 0.2s ease;
-}
-
-.tenaga-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
-}
-
-.tenaga-foto {
-    width: 130px;
-    height: 150px;
-    margin: 0 auto 15px;
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-    background: var(--soft-bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    color: var(--paragraph-color);
-}
-
-.tenaga-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.tenaga-card h3 {
-    color: var(--heading-color);
-    font-size: 17px;
-    margin-bottom: 7px;
-}
-
-.tenaga-card p {
-    color: var(--paragraph-color);
-    font-size: 14px;
-}
-
-@media (max-width: 600px) {
-    .tenaga-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
+        @media (max-width: 600px) {
+            .tenaga-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -280,14 +265,13 @@ border: 1px solid var(--border-color);
         </div>
 
         <nav class="main-nav">
-    <a href="index.html">Beranda</a>
-    <a href="profil.html">Profil</a>
-    <a href="akademik.html">Akademik</a>
-    <a href="kesiswaan.html">Kesiswaan</a>
-    <a href="berita.html">Berita</a>
-    <a href="kontak.html">Kontak</a>
-</nav>
-
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="akademik.html">Akademik</a>
+            <a href="kesiswaan.html">Kesiswaan</a>
+            <a href="berita.html">Berita</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
     </header>
 
 
@@ -326,7 +310,7 @@ border: 1px solid var(--border-color);
             </div>
 
 
-            <!-- KOMPETENSI TKR -->
+            <!-- KOMPETENSI -->
             <section class="atp-kompetensi">
 
                 <h2>Kompetensi yang Dipelajari</h2>
@@ -370,113 +354,109 @@ border: 1px solid var(--border-color);
             </section>
 
 
-<!-- TENAGA PENDIDIK JURUSAN -->
+            <!-- TENAGA PENDIDIK JURUSAN -->
+            <section class="tenaga-jurusan">
 
-<section class="tenaga-jurusan">
+                <h2>Tenaga Pendidik dan Kependidikan Jurusan</h2>
 
-    <h2>Tenaga Pendidik Jurusan</h2>
+                <p class="tenaga-deskripsi">
+                    Tenaga yang berperan dalam pengelolaan
+                    dan pembelajaran program keahlian.
+                </p>
 
-    <p class="tenaga-deskripsi">
-        Tenaga pendidik yang berperan dalam pengelolaan
-        dan pembelajaran program keahlian.
-    </p>
 
-    <!-- KEPALA PROGRAM KEAHLIAN -->
+                <!-- KEPALA PROGRAM KEAHLIAN -->
+                <div class="tenaga-kaprog">
 
-    <div class="tenaga-kaprog">
+                    <div class="tenaga-card">
 
-        <div class="tenaga-card">
+                        <div class="tenaga-foto">
+                            Foto Kaprog
+                        </div>
 
-            <div class="tenaga-foto">
-                Foto Kaprog
-            </div>
+                        <h3>Dian Adibowo, S.T.</h3>
 
-            <h3>Nama Kepala Program Keahlian</h3>
+                        <p>Kepala Program Keahlian</p>
 
-            <p>Kepala Program Keahlian</p>
-
-        </div>
-
-    </div>
-
-    <!-- GURU PRODUKTIF -->
-
-    <div class="tenaga-grid">
-
-        <div class="tenaga-card">
-
-            <div class="tenaga-foto">
-                Foto Guru
-            </div>
-
-            <h3>Nama Guru Produktif 1</h3>
-
-            <p>Guru Produktif</p>
-
-        </div>
-
-        <div class="tenaga-card">
-
-            <div class="tenaga-foto">
-                Foto Guru
-            </div>
-
-            <h3>Nama Guru Produktif 2</h3>
-
-            <p>Guru Produktif</p>
-
-        </div>
-
-    </div>
-
-</section>
-
-            <!-- GALERI DOKUMENTASI -->
-            <section class="atp-gallery">
-
-                <h2>Dokumentasi Program Keahlian</h2>
-
-                <div class="gallery-grid">
-
-                    <div class="gallery-placeholder">
-                        <span>📷</span>
-                        <h3>Gedung atau Area Jurusan</h3>
-                        <p>Foto dokumentasi akan ditambahkan.</p>
-                    </div>
-
-                    <div class="gallery-placeholder">
-                        <span>📷</span>
-                        <h3>Fasilitas Praktik</h3>
-                        <p>Foto dokumentasi akan ditambahkan.</p>
-                    </div>
-
-                    <div class="gallery-placeholder">
-                        <span>📷</span>
-                        <h3>Kegiatan Pembelajaran</h3>
-                        <p>Foto dokumentasi akan ditambahkan.</p>
                     </div>
 
                 </div>
 
-                <p class="gallery-note">
-                    Dokumentasi program keahlian akan diperbarui
-                    sesuai dengan ketersediaan foto dan informasi
-                    resmi dari sekolah.
-                </p>
+                <div class="tenaga-grid">
+
+                    <div class="tenaga-card">
+
+                        <div class="tenaga-foto">
+                            Foto Guru
+                        </div>
+
+                        <h3>Muhammad Sauqillah, S.T.</h3>
+
+                        <p>Guru Produktif</p>
+
+                    </div>
+
+                    <div class="tenaga-card">
+
+                        <div class="tenaga-foto">
+                            Foto Juru Bengkel
+                        </div>
+
+                        <h3>Fajar</h3>
+
+                        <p>Juru Bengkelr</p>
+
+                    </div>
+
+                </div>
 
             </section>
+
+
+            
+           
+        <!-- FASILITAS PROGRAM KEAHLIAN -->
+        <section class="atp-gallery">
+
+            <h2>Fasilitas Program Keahlian</h2>
+
+            <div class="gallery-grid">
+
+                <div class="fasilitas-card">
+                    <img src="image/fasilitas-tkr-1.jpg"
+                        alt="Area Bengkel TKR">
+                    <h3>Area Bengkel TKR</h3>
+                </div>
+
+                <div class="fasilitas-card">
+                    <img src="image/fasilitas-tkr-2.jpg"
+                        alt="Peralatan Bengkel TKR">
+                    <h3>Peralatan Bengkel</h3>
+                </div>
+
+                <div class="fasilitas-card">
+                    <img src="image/fasilitas-tkr-3.jpg"
+                        alt="Peralatan Praktik Otomotif">
+                    <h3>Peralatan Praktik Otomotif</h3>
+                </div>
+
+            </div>
+
+        </section>
+
 
         </section>
 
     </main>
 
 
-    <!-- FOOTER -->
+
     <footer>
         <p>&copy; 2026 TECH DAILY - Four Teams</p>
         <p>SMK Negeri 1 Kusan Hulu</p>
     </footer>
 
     <script src="js/theme.js"></script>
+
 </body>
 </html>
