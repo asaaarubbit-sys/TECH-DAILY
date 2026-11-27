@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -17,12 +18,12 @@
         }
 
         /* JUDUL HALAMAN */
-      .atp-title {
-    color: var(--heading-color, #173747);
-    text-align: center;
-    margin-bottom: 30px;
-    line-height: 1.5;
-}
+        .atp-title {
+            color: var(--heading-color, #173747);
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
 
         /* PENGENALAN ATP */
         .atp-intro {
@@ -30,10 +31,9 @@
             grid-template-columns: 1fr 1.2fr;
             gap: 30px;
             align-items: center;
-
-         background: var(--card-color);
-padding: 25px;
-border: 1px solid var(--border-color);
+            background: var(--card-color);
+            padding: 25px;
+            border: 1px solid var(--border-color);
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.07);
         }
@@ -45,28 +45,22 @@ border: 1px solid var(--border-color);
             border-radius: 10px;
         }
 
-.atp-info h3 {
-    color: var(--heading-color);
-    margin-bottom: 15px;
-    font-size: 22px;
-}
-
-       .atp-info h3 {
-    color: var(--heading-color);
-    margin-bottom: 15px;
-    font-size: 22px;
-}
+        .atp-info h3 {
+            color: var(--heading-color);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
 
         /* KOMPETENSI */
         .atp-kompetensi {
             margin-top: 45px;
         }
 
-       .atp-kompetensi h2,
-.atp-gallery h2 {
-    color: var(--heading-color, #173747);
-    margin-bottom: 22px;
-}
+        .atp-kompetensi h2,
+        .atp-gallery h2 {
+            color: var(--heading-color, #173747);
+            margin-bottom: 22px;
+        }
 
         .kompetensi-grid {
             display: grid;
@@ -74,32 +68,31 @@ border: 1px solid var(--border-color);
             gap: 20px;
         }
 
-      .kompetensi-card {
-    background: var(--card-color);
-    padding: 22px;
-    border: 1px solid var(--border-color);
-    border-left: 5px solid #28746f;
-    border-radius: 10px;
-
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
-}
+        .kompetensi-card {
+            background: var(--card-color);
+            padding: 22px;
+            border: 1px solid var(--border-color);
+            border-left: 5px solid #28746f;
+            border-radius: 10px;
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
 
         .kompetensi-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.09);
         }
 
-       .kompetensi-card h3 {
-    color: var(--heading-color);
-    margin-bottom: 10px;
-    font-size: 19px;
-}
+        .kompetensi-card h3 {
+            color: var(--heading-color);
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
 
         .kompetensi-card p {
-    color: var(--paragraph-color);
-    line-height: 1.7;
-    }
+            color: var(--paragraph-color);
+            line-height: 1.7;
+        }
 
         /* GALERI DOKUMENTASI */
         .atp-gallery {
@@ -117,7 +110,6 @@ border: 1px solid var(--border-color);
             background: var(--soft-bg);
             border: 2px dashed var(--border-color);
             border-radius: 10px;
-
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -132,25 +124,24 @@ border: 1px solid var(--border-color);
         }
 
         .gallery-placeholder h3 {
-    color: var(--heading-color);
-    font-size: 16px;
-}
+            color: var(--heading-color);
+            font-size: 16px;
+        }
 
-.gallery-placeholder p {
-    color: var(--paragraph-color);
-    font-size: 13px;
-}
+        .gallery-placeholder p {
+            color: var(--paragraph-color);
+            font-size: 13px;
+        }
 
-.gallery-note {
-    margin-top: 15px;
-    color: var(--paragraph-color);
-    font-size: 14px;
-    line-height: 1.7;
-}
+        .gallery-note {
+            margin-top: 15px;
+            color: var(--paragraph-color);
+            font-size: 14px;
+            line-height: 1.7;
+        }
 
         /* RESPONSIVE */
         @media (max-width: 700px) {
-
             .atp-section {
                 width: 90%;
             }
@@ -172,87 +163,85 @@ border: 1px solid var(--border-color);
             }
         }
 
+        /* TENAGA PENDIDIK JURUSAN */
+        .tenaga-jurusan {
+            margin: 45px 0;
+        }
 
-/* TENAGA PENDIDIK JURUSAN */
+        .tenaga-jurusan h2 {
+            color: var(--heading-color);
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
 
-.tenaga-jurusan {
-    margin: 45px 0;
-}
+        .tenaga-deskripsi {
+            color: var(--paragraph-color);
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
 
-.tenaga-jurusan h2 {
-    color: var(--heading-color);
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 12px;
-}
+        .tenaga-kaprog {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
 
-.tenaga-deskripsi {
-    color: var(--paragraph-color);
-    text-align: center;
-    margin-bottom: 30px;
-    line-height: 1.7;
-}
+        .tenaga-grid {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 22px;
+        }
 
-.tenaga-kaprog {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 35px;
-}
+        .tenaga-card {
+            background: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            width: 230px;
+            text-align: center;
+            transition: transform 0.2s ease,
+                        box-shadow 0.2s ease;
+        }
 
-.tenaga-grid {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    gap: 22px;
-}
+        .tenaga-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 5px 14px rgba(0,0,0,0.12);
+        }
 
-.tenaga-card {
-    background: var(--card-color);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 20px;
-    width: 230px;
-    text-align: center;
-    transition: transform 0.2s ease,
-                box-shadow 0.2s ease;
-}
+        .tenaga-foto {
+            width: 130px;
+            height: 150px;
+            margin: 0 auto 15px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            background: var(--soft-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: var(--paragraph-color);
+        }
 
-.tenaga-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px 14px rgba(0,0,0,0.12);
-}
+        .tenaga-foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-.tenaga-foto {
-    width: 130px;
-    height: 150px;
-    margin: 0 auto 15px;
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-    background: var(--soft-bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    color: var(--paragraph-color);
-}
+        .tenaga-card h3 {
+            color: var(--heading-color);
+            font-size: 17px;
+            margin-bottom: 7px;
+        }
 
-.tenaga-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.tenaga-card h3 {
-    color: var(--heading-color);
-    font-size: 17px;
-    margin-bottom: 7px;
-}
-
-.tenaga-card p {
-    color: var(--paragraph-color);
-    font-size: 14px;
-}
+        .tenaga-card p {
+            color: var(--paragraph-color);
+            font-size: 14px;
+        }
 
     </style>
 </head>
@@ -263,6 +252,7 @@ border: 1px solid var(--border-color);
         <div class="header-logo">
             <img src="image/Logo sekolah.jpg"
                  alt="Logo SMK Negeri 1 Kusan Hulu">
+
             <div>
                 <h1>SMK Negeri 1 Kusan Hulu</h1>
                 <p>Website Informasi Sekolah</p>
@@ -270,14 +260,13 @@ border: 1px solid var(--border-color);
         </div>
 
         <nav class="main-nav">
-    <a href="index.html">Beranda</a>
-    <a href="profil.html">Profil</a>
-    <a href="akademik.html">Akademik</a>
-    <a href="kesiswaan.html">Kesiswaan</a>
-    <a href="berita.html">Berita</a>
-    <a href="kontak.html">Kontak</a>
-</nav>
-
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="akademik.html">Akademik</a>
+            <a href="kesiswaan.html">Kesiswaan</a>
+            <a href="berita.html">Berita</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
     </header>
 
     <main class="atp-section">
@@ -349,57 +338,58 @@ border: 1px solid var(--border-color);
                 </div>
 
             </div>
+
         </section>
 
+    
+        <section class="tenaga-jurusan">
 
-<section class="tenaga-jurusan">
+            <h2>Tenaga Pendidik Jurusan</h2>
 
-    <h2>Tenaga Pendidik Jurusan</h2>
+            <p class="tenaga-deskripsi">
+                Tenaga pendidik yang berperan dalam pengelolaan
+                dan pembelajaran program keahlian.
+            </p>
 
-    <p class="tenaga-deskripsi">
-        Tenaga pendidik yang berperan dalam pengelolaan
-        dan pembelajaran program keahlian.
-    </p>
+       
+            <div class="tenaga-kaprog">
 
-    <!-- KEPALA PROGRAM KEAHLIAN -->
+                <div class="tenaga-card">
 
-    <div class="tenaga-kaprog">
+                    <div class="tenaga-foto">
+                        <img src="image/kaprog-tkj.jpg"
+                             alt="Ismiatin, S.Kom.">
+                    </div>
 
-        <div class="tenaga-card">
+                    <h3>Ismiatin, S.Kom.</h3>
 
-            <div class="tenaga-foto">
-                Foto Kaprog
+                    <p>Kepala Program Keahlian</p>
+
+                </div>
+
             </div>
 
-            <h3>Ismiatin S.Kom</h3>
+       
+            <h2>Guru Produktif</h2>
 
-            <p>Kepala Program Keahlian</p>
+            <div class="tenaga-grid">
 
-        </div>
+                <div class="tenaga-card">
 
-    </div>
+                    <div class="tenaga-foto">
+                        <img src="image/foto-guru-produktif-tkj.jpg"
+                             alt="I Komang Mudiada, S.Kom., M.M.">
+                    </div>
 
-    <!-- GURU PRODUKTIF -->
+                    <h3>I Komang Mudiada, S.Kom., M.M</h3>
 
-    <h2>Guru Produktif</h2>
+                    <p>Guru Produktif</p>
 
-    <div class="tenaga-grid">
+                </div>
 
-        <div class="tenaga-card">
-
-            <div class="tenaga-foto">
-                Foto Guru
             </div>
 
-            <h3>I Komang Mudiada S.Kom</h3>
-
-            <p>Guru Produktif</p>
-
-        </div>
-
-    </div>
-
-</section>
+        </section>
 
         <!-- GALERI DOKUMENTASI -->
         <section class="atp-gallery">
